@@ -29,7 +29,7 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://archives.boost.io/release/1.86.0/source/boost_1_86_0.tar.bz2",
+                    "url": "https://boostorg.jfrog.io/artifactory/main/release/1.86.0/source/boost_1_86_0.tar.bz2",
                     "sha256": "1bed88e40401b2cb7a1f76d4bab499e352fa4d0c5f31c0dbae64e24d34d7513b",
                     "x-checker-data": {
                         "type": "anitya",
@@ -66,13 +66,13 @@
                 "-Dvapi=false",
                 "-Dgtk_doc=false",
                 "-Dintrospection=false",
-                "-Dgcrypt=false"
+                "-Dcrypto=disabled"
             ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/libsecret/0.20/libsecret-0.20.5.tar.xz",
-                    "sha256": "3fb3ce340fcd7db54d87c893e69bfc2b1f6e4d4b279065ffe66dac9f0fd12b4d",
+                    "url": "https://download.gnome.org/sources/libsecret/0.21/libsecret-0.21.4.tar.xz",
+                    "sha256": "163d08d783be6d4ab9a979ceb5a4fecbc1d9660d3c34168c581301cd53912b20",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "libsecret",
@@ -314,25 +314,14 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/calligra/calligra-4.0.0.tar.xz",
-                    "sha256": "e97cb1dc0720074d37d8ec11662f2628384595311c3dac6b29477d6634144119",
+                    "url": "https://download.kde.org/stable/calligra/calligra-4.0.1.tar.xz",
+                    "sha256": "d401f5e73f4f1bdc0b3548ea1a50b0ac1778c1ede30a6a335944ed7fbd88d95f",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 250,
                         "stable-only": true,
                         "url-template": "https://download.kde.org/stable/calligra/calligra-$version.tar.xz"
                     }
-                },
-                {
-                    "type": "patch",
-                    "paths": [
-                        "patches/0001-Fix-icons-loading-on-wayland.patch",
-                        "patches/0002-Fix-icons.patch",
-                        "patches/0001-launcher-Fix-lint-errors.patch",
-                        "patches/0001-Disable-dbus-with-flatpak.patch",
-                        "patches/0001-Add-error-handling-in-app-launcher.patch",
-                        "patches/0001-Disable-gemini-completely.patch"
-                    ]
                 }
             ]
         }
