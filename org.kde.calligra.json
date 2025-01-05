@@ -1,7 +1,7 @@
 {
     "id": "org.kde.calligra",
     "runtime": "org.kde.Platform",
-    "runtime-version": "6.7",
+    "runtime-version": "6.8",
     "sdk": "org.kde.Sdk",
     "command": "calligralauncher",
     "finish-args": [
@@ -87,13 +87,13 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/frankosterfeld/qtkeychain/archive/0.14.2.tar.gz",
-                    "sha256": "cf2e972b783ba66334a79a30f6b3a1ea794a1dc574d6c3bebae5ffd2f0399571",
+                    "url": "https://github.com/frankosterfeld/qtkeychain/archive/refs/tags/0.14.3.tar.gz",
+                    "sha256": "a22c708f351431d8736a0ac5c562414f2b7bb919a6292cbca1ff7ac0849cb0a7",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 4138,
                         "stable-only": true,
-                        "url-template": "https://github.com/frankosterfeld/qtkeychain/archive/v$version.tar.gz"
+                        "url-template": "https://github.com/frankosterfeld/qtkeychain/archive/refs/tags/$version.tar.gz"
                     }
                 }
             ],
@@ -310,13 +310,13 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/calligra/calligra-4.0.1.tar.xz",
-                    "sha256": "d401f5e73f4f1bdc0b3548ea1a50b0ac1778c1ede30a6a335944ed7fbd88d95f",
+                    "url": "https://download.kde.org/stable/release-service/24.12.0/src/calligra-24.12.0.tar.xz",
+                    "sha256": "71b89f1e8121b8f88ee43376acf7cb7a88cb6d9a078e8ba3f102389f9a1f6097",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 250,
                         "stable-only": true,
-                        "url-template": "https://download.kde.org/stable/calligra/calligra-$version.tar.xz"
+                        "url-template": "https://download.kde.org/stable/release-service/$version/src/calligra-$version.tar.xz"
                     }
                 }
             ]
