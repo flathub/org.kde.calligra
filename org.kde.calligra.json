@@ -310,8 +310,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/25.04.1/src/calligra-25.04.1.tar.xz",
-                    "sha256": "f81e832b9b562d39e2177b45569608be94ee03bae061a5e7c27eb2dc0b2bd3e8",
+                    "url": "https://download.kde.org/stable/release-service/25.04.2/src/calligra-25.04.2.tar.xz",
+                    "sha256": "0c06c1df4200e3e5167829a52907553f83d8de50e0ea45c26898fea9c1850b42",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 250,
