@@ -43,6 +43,10 @@
         {
             "name": "eigen",
             "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF",
+                "-DCMAKE_BUILD_TYPE=RelWithDebInfo"
+            ],
             "builddir": true,
             "sources": [
                 {
@@ -84,6 +88,13 @@
         {
             "name": "qtkeychain",
             "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF",
+                "-DBUILD_TRANSLATIONS=NO",
+                "-DBUILD_WITH_QT6=ON",
+                "-DCMAKE_BUILD_TYPE=RelWithDebInfo",
+                "-DLIB_INSTALL_DIR=/app/lib"
+            ],
             "sources": [
                 {
                     "type": "archive",
@@ -96,19 +107,15 @@
                         "url-template": "https://github.com/frankosterfeld/qtkeychain/archive/refs/tags/$version.tar.gz"
                     }
                 }
-            ],
-            "config-opts": [
-                "-DBUILD_WITH_QT6=ON",
-                "-DLIB_INSTALL_DIR=/app/lib",
-                "-DBUILD_TRANSLATIONS=NO"
             ]
         },
         {
-            "config-opts": [
-                "-DBUILD_TESTING=OFF"
-            ],
             "name": "kdiagram",
             "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF",
+                "-DCMAKE_BUILD_TYPE=RelWithDebInfo"
+            ],
             "sources": [
                 {
                     "type": "archive",
@@ -305,7 +312,8 @@
             "config-opts": [
                 "-DBUILD_TESTING=OFF",
                 "-DCALLIGRA_FLATPAK=ON",
-                "-DRELEASE_BUILD=true"
+                "-DRELEASE_BUILD=true",
+                "-DCMAKE_BUILD_TYPE=RelWithDebInfo"
             ],
             "sources": [
                 {
