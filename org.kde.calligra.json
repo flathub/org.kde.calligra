@@ -191,7 +191,9 @@
             "name": "librevenge",
             "buildsystem": "autotools",
             "config-opts": [
-                "--disable-werror"
+                "--disable-tests",
+                "--disable-werror",
+                "--without-docs"
             ],
             "builddir": true,
             "sources": [
