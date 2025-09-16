@@ -246,6 +246,10 @@
         {
             "name": "libvisio",
             "buildsystem": "autotools",
+            "config-opts": [
+                "--disable-tests",
+                "--without-docs"
+            ],
             "builddir": true,
             "sources": [
                 {
@@ -264,6 +268,10 @@
         {
             "name": "libwpd",
             "buildsystem": "autotools",
+            "config-opts": [
+                "--disable-tests",
+                "--without-docs"
+            ],
             "builddir": true,
             "sources": [
                 {
@@ -282,6 +290,10 @@
         {
             "name": "libwpg",
             "buildsystem": "autotools",
+            "config-opts": [
+                "--disable-tests",
+                "--without-docs"
+            ],
             "builddir": true,
             "sources": [
                 {
@@ -300,6 +312,10 @@
         {
             "name": "libwps",
             "buildsystem": "autotools",
+            "config-opts": [
+                "--disable-tests",
+                "--without-docs"
+            ],
             "builddir": true,
             "sources": [
                 {
