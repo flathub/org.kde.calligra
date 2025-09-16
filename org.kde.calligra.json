@@ -213,6 +213,10 @@
         {
             "name": "libodfgen",
             "buildsystem": "autotools",
+            "config-opts": [
+                "--disable-tests",
+                "--without-docs"
+            ],
             "builddir": true,
             "sources": [
                 {
