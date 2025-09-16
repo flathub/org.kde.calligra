@@ -15,6 +15,10 @@
         "/include",
         "/lib/cmake",
         "/lib/pkgconfig",
+        "/mkspecs",
+        "/share/eigen3",
+        "/share/kdevappwizard",
+        "/share/pkgconfig",
         "*.a",
         "*.la"
     ],
@@ -43,6 +47,10 @@
         {
             "name": "eigen",
             "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF",
+                "-DCMAKE_BUILD_TYPE=RelWithDebInfo"
+            ],
             "builddir": true,
             "sources": [
                 {
@@ -61,6 +69,13 @@
         {
             "name": "qtkeychain",
             "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF",
+                "-DBUILD_TRANSLATIONS=NO",
+                "-DBUILD_WITH_QT6=ON",
+                "-DCMAKE_BUILD_TYPE=RelWithDebInfo",
+                "-DLIB_INSTALL_DIR=/app/lib"
+            ],
             "sources": [
                 {
                     "type": "archive",
@@ -73,19 +88,15 @@
                         "url-template": "https://github.com/frankosterfeld/qtkeychain/archive/refs/tags/$version.tar.gz"
                     }
                 }
-            ],
-            "config-opts": [
-                "-DBUILD_WITH_QT6=ON",
-                "-DLIB_INSTALL_DIR=/app/lib",
-                "-DBUILD_TRANSLATIONS=NO"
             ]
         },
         {
-            "config-opts": [
-                "-DBUILD_TESTING=OFF"
-            ],
             "name": "kdiagram",
             "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF",
+                "-DCMAKE_BUILD_TYPE=RelWithDebInfo"
+            ],
             "sources": [
                 {
                     "type": "archive",
@@ -168,7 +179,9 @@
             "name": "librevenge",
             "buildsystem": "autotools",
             "config-opts": [
-                "--disable-werror"
+                "--disable-tests",
+                "--disable-werror",
+                "--without-docs"
             ],
             "builddir": true,
             "sources": [
@@ -188,6 +201,10 @@
         {
             "name": "libodfgen",
             "buildsystem": "autotools",
+            "config-opts": [
+                "--disable-tests",
+                "--without-docs"
+            ],
             "builddir": true,
             "sources": [
                 {
@@ -206,6 +223,10 @@
         {
             "name": "libvisio",
             "buildsystem": "autotools",
+            "config-opts": [
+                "--disable-tests",
+                "--without-docs"
+            ],
             "builddir": true,
             "sources": [
                 {
@@ -224,6 +245,10 @@
         {
             "name": "libwpd",
             "buildsystem": "autotools",
+            "config-opts": [
+                "--disable-tests",
+                "--without-docs"
+            ],
             "builddir": true,
             "sources": [
                 {
@@ -242,6 +267,10 @@
         {
             "name": "libwpg",
             "buildsystem": "autotools",
+            "config-opts": [
+                "--disable-tests",
+                "--without-docs"
+            ],
             "builddir": true,
             "sources": [
                 {
@@ -260,6 +289,10 @@
         {
             "name": "libwps",
             "buildsystem": "autotools",
+            "config-opts": [
+                "--disable-tests",
+                "--without-docs"
+            ],
             "builddir": true,
             "sources": [
                 {
@@ -282,13 +315,14 @@
             "config-opts": [
                 "-DBUILD_TESTING=OFF",
                 "-DCALLIGRA_FLATPAK=ON",
-                "-DRELEASE_BUILD=true"
+                "-DRELEASE_BUILD=true",
+                "-DCMAKE_BUILD_TYPE=RelWithDebInfo"
             ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/25.08.0/src/calligra-25.08.0.tar.xz",
-                    "sha256": "3366f528ce1cfacd8f05b24aa1f299b27bbd6f13322cefe3d8a5c909e16f11a0",
+                    "url": "https://download.kde.org/stable/release-service/25.08.1/src/calligra-25.08.1.tar.xz",
+                    "sha256": "336448188fc2ff889efc21049183b4689e5507d587d3e8bd2c2582c2f9cfe8df",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 250,
