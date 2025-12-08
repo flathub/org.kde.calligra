@@ -328,7 +328,7 @@
                     "sha256": "74fac78253c429853e99fae00bcf2b84332dbc3a8f538ccf70674259266b9251",
                     "x-checker-data": {
                         "type": "anitya",
-                        "project-id": 250,
+                        "project-id": 8763,
                         "stable-only": true,
                         "url-template": "https://download.kde.org/stable/release-service/$version/src/calligra-$version.tar.xz"
                     }
