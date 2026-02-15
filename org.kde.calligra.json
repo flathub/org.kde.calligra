@@ -16,8 +16,10 @@
         "/lib/cmake",
         "/lib/pkgconfig",
         "/mkspecs",
+        "/share/doc",
         "/share/eigen3",
         "/share/kdevappwizard",
+        "/share/man",
         "/share/pkgconfig",
         "*.a",
         "*.la"
