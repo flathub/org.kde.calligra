@@ -35,8 +35,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://archives.boost.io/release/1.90.0/source/boost_1_90_0.tar.bz2",
-                    "sha256": "49551aff3b22cbc5c5a9ed3dbc92f0e23ea50a0f7325b0d198b705e8ee3fc305",
+                    "url": "https://archives.boost.io/release/1.92.0/source/boost_1_92_0.tar.bz2",
+                    "sha256": "5c1d40cb8e19adbf740a4ec2da35b3e58f3f5804b1dce44deb53df72193cbc6c",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 6845,
@@ -171,8 +171,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://sourceforge.net/projects/libwpd/files/librevenge/librevenge-0.0.5/librevenge-0.0.5.tar.xz",
-                    "sha256": "106d0c44bb6408b1348b9e0465666fa83b816177665a22cd017e886c1aaeeb34",
+                    "url": "https://sourceforge.net/projects/libwpd/files/librevenge/librevenge-0.0.6/librevenge-0.0.6.tar.xz",
+                    "sha256": "19eacf5ce55d7fe6a990a45142589cdf7da0c7b68701797f133482cb44f189fa",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 16780,
@@ -309,8 +309,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/26.04.3/src/calligra-26.04.3.tar.xz",
-                    "sha256": "4c7fff9af90d7a5a2d3c5683b1fdc936c627459cd2f2cdb4fc3837822c52b345",
+                    "url": "https://download.kde.org/stable/release-service/26.08.0/src/calligra-26.08.0.tar.xz",
+                    "sha256": "ebd2dcc10541294fc538bcf667abcb19fa0455e3a507ed69fc8a6fcd3adff847",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
